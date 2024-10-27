@@ -1,9 +1,9 @@
-body {
+body { /* configurações visuais para todo o corpo do site - isso inclui a fonte e a cor de fundo*/ 
   font-family: 'Inter';
   background-color: #531516;
 }
 
-h1 {
+h1 { /* define a cor, peso e tamanho da fonte e alinhamento do titulo do site */
   color: white;
   text-align: center;
   margin-bottom: 0px;
@@ -11,7 +11,7 @@ h1 {
   font-size: 2.5em;
 }
 
-#flip {
+#flip { /* mesmo acima, com a diferença que inverte a fonte no eixo */
   color: white;
   text-align: center;
   font-weight: bolder;
@@ -20,7 +20,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-ul {
+ul { /* configuração da lista não ordenada. overflow faz com que ela siga todo o comprimento da tela */
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -29,14 +29,14 @@ ul {
   border-radius: 8px;
 }
 
-li {
+li { /* edição visual dos membros da lista */
   float: left;
   display: inline;
   background-color: #1B222C;
   border-radius: 8px;
 }
 
-a {
+a { /* edição visual de cada elemento da lista, os links. text-decoration none retira a linha abaixo dos links */
   font-size: 1em;
   color: white;
   font-weight: bold;
@@ -45,11 +45,11 @@ a {
   padding: 20px;
 }
 
-a:hover {
+a:hover { /* o efeito hover faz com que os links mudem a cor de fundo quando o mouse passa por cima */
   background-color: #661b1c;
 }
 
-#gato {
+#gato { /* edição visual da imagem do gato */
   border-radius: 8px;
   float: right;
   margin-bottom: 0px;
@@ -60,10 +60,11 @@ a:hover {
   height: 40%;
 }
 
-#gato:hover{
+#gato:hover{ /* faz com que o gato gire no eixo x quando o mouse passa por cima */
   transform: scaleX(-1);
 }
 
+/* as div's abaixo são apenas edições visuais para manter o texto delas na cor branca */
 .div_noticia {
     color: white;
 }
@@ -76,10 +77,30 @@ a:hover {
   color: white;
 }
 
+/* gira  o gif da raposa no eixo horizontal */
 #raposa {
   transform: scaleX(-1);
 }
 
-.form_inscricao {
+.form_inscricao { /* muda a cor da fonte dos elementos do formulario */
   color: white;
+}
+
+#submit { /* edição grafica do botão do formulario. muda a cor dele, tamanho da fonte e deixa o botão com cantos arredondados */
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  border: #1B222C;
+  background-color: #1B222C;
+}
+
+#submit:hover { /* muda a cor de fundo do botão quando o mouse passar por cima */
+  background-color: #12151c;
+}
+
+.mensagem_erro { /* adiciona uma cor vermelha na mensagem de alerta */
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  animation: fadeOut 3s;
 }

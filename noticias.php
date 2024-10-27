@@ -22,9 +22,9 @@
 
         <img id="gato" src="demo_gato.jpg" alt="gato do demo">
 
-        <div class="div_noticia">
+        <div class="div_noticia"> <!--cria a div onde vai o bloco das noticias -->
           <p>
-          <h2>Diogo é visto sendo gado em Ribeirão Preto</h2>
+          <h2>Diogo é visto sendo gado em Ribeirão Preto</h2> <!-- chamada da materia -->
             Como não é surpresa para ninguém, nosso querido Diogo, mais conhecido como Didi, foi visto sendo gado de uma garota.
             <br><br>
             Boatos dizem que era a terceira garota da semana. Testemunhas afirmam que era uma menina gótica, com problemas paternos.

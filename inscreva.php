@@ -23,22 +23,35 @@
         <img id="gato" src="demo_gato.jpg" alt="gato do demo">
 
         <h2 style="color:white">Quer receber noticias, informações e atualizações? Se inscreva na nossa Newsletter Vermelha: </h2>
+          
+          <form id="form_inscricao" class="form_inscricao" method="POST" action="conexao.php"> <!-- formulario para validar os dados e envia-los para o banco de dados -->
+            <p>Nome: <input type="text" id="nome" name="nome" placeholder="Aqui você coloca seu nome :)"> <!-- entrada de nome inseria pelo usuario -->
+                <span id="erro_nome" class="mensagem_erro"></span> <!-- essa tag fica invisivel ate que a função de validação a chame, caso ocorra algum erro no input do usuario -->
+            </p>
 
-        <form class="form_inscricao">
-            <p><label for="nome">Nome: </label><input type="text" id="nome" placeholder="Aqui você coloca seu nome :)"></p>
+            <p>Email: <input type="text" id="email" name="email" placeholder="Digite seu email aqui :)"> <!-- mesmo caso citado acima, porem para emails -->
+                <span id="erro_email" class="mensagem_erro"></span>
+            </p>
 
-            <p><label for="email">Email: </label><input type="text" id="email" placeholder="Digite seu email aqui :)"></p>
+            <p>És boy?</label><input type="radio" id="genero" name="genero" value="menino"> <!-- cria um mini menu para o usuario escolher a qual genero se identifica -->
+               ou És boya?</label><input type="radio" id="genero" name="genero" value="menina">
+              <span id="erro_genero" class="mensagem_erro"></span>
+            </p>
 
-            <p><label for="menino">És boy?</label><input type="radio" id="menino" name="selecao">
-              <label for="menina">ou És boya?</label><input type="radio" id="menina" name="selecao"></p>
-
-            <p>Fale um pouco sobre você:</p>
-            <p><textarea rows="5" cols="50"></textarea></p>
+            <p>Fale um pouco sobre você:</p> <!-- caixa de texto para o usuario falar de si -->
+            <p><textarea rows="5" cols="50" id="comentario" name="comentario"></textarea>
+                <span id="erro_comentario" class="mensagem_erro"></span>
+            </p>
             <br>
 
-            <h3>Deseja receber informações e ofertas de nossos patrocinadores?</h3>
-            <p><input type="radio" id="sim" name="oferta"><label for="sim"> Sim, quero</label></p>
-            <p><input type="radio" id="nao" name="oferta"><label for="nao"> Não, não quero</label></p>
+            <h3>Deseja receber informações e ofertas de nossos patrocinadores?</h3> <!-- pergunta se o usuario deseja receber noticias dos patrocinadores do site -->
+            <p><input type="radio" id="oferta" name="oferta" value="sim"> Sim, quero <!-- ele pode aceitar ou recusar -->
+              <br>
+            <input type="radio" id="oferta" name="oferta" value="nao"> Não, não quero
+              <span id="erro_oferta" class="mensagem_erro"></span>
+            </p>
+
+            <p><input type="submit" value="Enviar" id="submit" name="submit"></p> <!-- botão que envia os dados do input para a função do js e o script do php -->
         </form>
 
     </body>

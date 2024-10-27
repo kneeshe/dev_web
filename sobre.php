@@ -22,7 +22,7 @@
 
         <img id="gato" src="demo_gato.jpg" alt="gato do demo">
 
-        <div class="div_sobre">
+        <div class="div_sobre"> <!-- div para criar o bloco editavel onde entrarão o texto sobre o site e seus criadores -->
         <p>
           <h2>Por que?</h2>
 
@@ -41,11 +41,7 @@
           <h3>Vinicius: </h3> O guitarrista - no rpg joga de bardo.
         </p>
 
-
-
         </div>
-
-
 
     </body>
 </html>
