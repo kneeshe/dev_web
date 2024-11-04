@@ -29,7 +29,7 @@ $idade = $conn->query("SELECT id_idade, idade FROM idade");
 	<li><a href="cadastro_filme.php" id="cadastro_filme" style="background-color: #12151c">Cadastro de filmes</a></li>
 	</ul>
 
-        <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">
+        <img id="gato" src="../imagens/dog_juliette.webp" alt="dog de juliete">
 
         <h2 style="color:white">Cadastre um novo filme</h2>
         <form class="cadastro_filme" action="processo_filme.php" method="POST">
