@@ -15,7 +15,8 @@
         <ul> <!-- cria uma lista não ordenada. nesse caso foi usado para criar o menu do site -->
         <li><a href="index.php" id="inicio" style="background-color: #12151c"> Inicio </a></li> <!-- cada um dos links que levarão para outras paginas do site -->
         <li><a href="sobre.php"id="sobre"> Sobre </a></li>
-        <li><a href="tabela_bd.php" id="analises"> Análises </a></li>
+	<li><a href="creditos.php" id="creditos">Créditos</a></li>       
+	<li><a href="tabela_bd.php" id="analises"> Análises </a></li>
         <li><a href="noticias.php" id="noticias"> Notícias </a></li>
 	<li style="float:right"><a href="inscreva.php" id="inscreva"> Inscreva-se </a></li> <!-- esse link foi estilizado para ficar a direita na pagina do site -->
 	<li><a href="cadastro_filme.php" id="cadastro_filme">Cadastro de filmes</a></li>

@@ -1,47 +1,54 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="../estilo/style.css">
-        <script type="text/javascript" src="../javascript/script.js"></script>
-        <title>O Ocultista Cinefilo</title>
-    </head>
-    <body>
-        <h1>O Ocultista Cinéfilo</h1>
-        <h1 id="flip">O Ocultista Cinéfilo</h1>
-        
-        <ul>
-        <li><a href="index.php" id="inicio"> Inicio </a></li>
-        <li><a href="sobre.php"id="sobre" style="background-color: #12151c"> Sobre </a></li>
-        <li><a href="tabela_bd.php" id="analises"> Análises </a></li>
-        <li><a href="noticias.php" id="noticias"> Notícias </a></li>
-        <li style="float:right"><a href="inscreva.php" id="inscreva"> Inscreva-se </a></li>
-        </ul>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../estilo/style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>O Ocultista Cinéfilo</title>
+</head>
+<body>
+    <h1>O Ocultista Cinéfilo</h1>
+    <h1 id="flip">O Ocultista Cinéfilo</h1>
+    
+    <ul>
+        <li><a href="index.php" id="inicio">Início</a></li>
+        <li><a href="sobre.php" id="sobre" style="background-color: #12151c">Sobre</a></li>
+	<li><a href="creditos.php" id="creditos">Créditos</a></li> 
+	<li><a href="analises.php" id="analises">Análises</a></li>
+        <li><a href="noticias.php" id="noticias">Notícias</a></li>
+        <li><a href="cadastro_filme.php" id="cadastro_filme">ADD Filmes</a></li>
+        <li style="float:right"><a href="inscreva.php" id="inscreva">Inscreva-se</a></li>
+    </ul>
 
-        <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">
+    <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">
 
-        <div class="div_sobre"> <!-- div para criar o bloco editavel onde entrarão o texto sobre o site e seus criadores -->
-        <p>
-          <h2>Por que?</h2>
+    <div class="div_sobre">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo ao nosso cantinho infernal do cinema! Se você está aqui, provavelmente é porque está 
+        cansado das mesmas fórmulas previsíveis e quer algo com um pouco mais de… temperinho. Então, 
+        parabéns! Você encontrou o lugar certo. O que temos aqui? Filmes, claro, mas com um toque 
+        especial: misturamos uma pitada de sarcasmo, um pouco de humor negro (bem negro mesmo) e, claro, 
+        aquele toque infernal de criatividade.</p>
 
-        Essa é a pergunta que fizeram quando contamos do site e a resposta que sempre demos foi: "POR QUE NÃO?"
-        <br><br>
-        Por que nós, doidos, não podemos expressar nossa visão politicia e cultural em um ambiente semi-controlado? 
-        <br><br>
-        Se esse é o seu intuito, seja bem-vindo, camarada!
-        </p> 
+        <p>Nosso site não é para os fracos de coração ou para os puritanos do cinema. O design? Ah, 
+        imagine um inferno de fogos e chamas, com uma pitada de nonsense. Nossa logo? Um gato, todo 
+        estiloso e fantasiado de capeta, porque, vamos ser sinceros, se o capeta tivesse um pet, com 
+        certeza seria um gato. A gente sabe que você também pensa assim.</p>
 
-        <p>
-          <h2>A equipe</h2>
-          <h3>Cris: </h3> Doido e o idealizador das ideias idiotas!
-          <h3>Diogo: </h3> Doido, mas não sabe se expressar. Precisa do Cris para interagir com outras pessoas.
-          <h3>Felipe: </h3> O piloto de fuga da equipe.
-          <h3>Vinicius: </h3> O guitarrista - no rpg joga de bardo.
-        </p>
+        <p>Aqui, a regra é clara: se você está procurando um site com resenhas sérias, críticas profundas e 
+        análises técnicas sobre o último blockbuster, vá em frente e fuja o mais rápido possível. Nosso 
+        negócio é dar uma opinião que, no mínimo, te faça rir ou, no máximo, te faça questionar se o 
+        inferno pode ser um lugar divertido.</p>
 
-        </div>
+        <p>Afinal, quem disse que não dá para curtir o lado obscuro da vida, assistir aos filmes mais 
+        bizarros e sair com um sorriso no rosto? Aqui, as convenções cinematográficas vão para o tártaro e 
+        você pode relaxar com um bom filme (ou não). Então, sente-se e aproveite a jornada — e se o gato 
+        capeta aparecer, não se assuste, ele só quer te mostrar o filme que vai te deixar sem sono essa 
+        noite.</p>
 
-    </body>
+        <p>Se você ainda está com dúvidas sobre o que é esse site, pode ser que o Inferno já tenha te pegado.
+        Bem-vindo ao clube. 🐾🔥</p>
+    </div>
+</body>
 </html>
