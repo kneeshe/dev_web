@@ -1,9 +1,6 @@
 body { /* configurações visuais para todo o corpo do site - isso inclui a fonte e a cor de fundo*/ 
   font-family: 'Inter';
   background-color: #531516;
-  /*background-image: url("../imagens/bg.gif");
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 
 h1 { /* define a cor, peso e tamanho da fonte e alinhamento do titulo do site */
@@ -67,6 +64,21 @@ a:hover { /* o efeito hover faz com que os links mudem a cor de fundo quando o m
   transform: scaleX(-1);
 }
 
+#dog { /* edição visual da imagem do gato */
+  border-radius: 8px;
+  float: none;
+  margin-bottom: 0px;
+  margin-top: 45px;
+  display: block;
+  object-fit: contain;
+  width: 30%;
+  height: 40%;
+}
+
+#dog:hover{ /* faz com que o gato gire no eixo x quando o mouse passa por cima */
+  transform: scaleX(-1);
+}
+
 /* as div's abaixo são apenas edições visuais para manter o texto delas na cor branca */
 .div_noticia {
     color: white;
@@ -108,34 +120,177 @@ a:hover { /* o efeito hover faz com que os links mudem a cor de fundo quando o m
   animation: fadeOut 3s;
 }
 
-.tabela_banco, th, td{
-  border: 2px solid;
-  border-collapse: collapse;
-  color: white; 
+.filme {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin: 10px;
+  background-color: #0f0f0f70;
+  color: aliceblue;
 }
 
-.tabela_banco {
-  margin-top: 15px;
+.div_formulario {
+  position: absolute; /* Define a posição absoluta em relação ao contêiner mais próximo com position definido */
+  left: 0;            /* Move para o lado esquerdo */
+  margin: 0; 
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background-color: rgba(56, 52, 52, 0.541); /* Fundo escuro translúcido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
 }
 
-.th_banco {
+.div_formulario h2 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #661919; /* Destaque no subtítulo */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.td_banco {
-  text-align: left;
-}
-
-.th_banco, .td_banco {
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: calc(100% - 10px);
   padding: 10px;
-  border-bottom: 1px solid #fff;
-}
-
-.tr_banco:hover {
-  background-color: #661b1c;
-}
-
-.cadastro_filme {
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #1c1c1c;
   color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #661919;
+  box-shadow: 0 0 5px #661919;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="file"] {
+  padding: 5px;
+  color: #ffffff;
+}
+
+/* Botão de envio */
+button.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #7e0e0e;
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.btn:hover {
+  background-color: #661919;
+}
+
+.creditos-container {
+  width: 80%;
+  height: 350px; /* Altura visível da div */
+  overflow: hidden; /* Limita o conteúdo visível dentro da div */
+  border-radius: 10px;
+  background-color: #0f0f0f70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: aliceblue;
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, 15%); /* Ajusta o centro real */
+}
+
+.div_creditos {
+  position: absolute;
+  animation: rollCredits 25s linear infinite; /* Loop infinito */
+  text-align: center;
+}
+
+.div_creditos h2, .div_creditos h3 {
+  margin: 10px 0;
+}
+
+@keyframes rollCredits {
+  0% {
+      transform: translateY(100%); /* Começa na parte inferior */
+  }
+  100% {
+      transform: translateY(-100%); /* Sai pela parte superior */
+  }
+}
+
+.div_integrantes {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #0f0f0f70;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px; /* Tamanho máximo da seção */
+}
+
+.div_pessoas {
+  margin: 10px;
+  padding: 15px;
+  width: calc(45% - 20px); /* Menor largura para ajustar o layout */
+  background-color: #292929;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.div_pessoas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.div_pessoas img {
+  width: 100px; /* Largura fixa */
+  height: 100px; /* Altura igual à largura */
+  border-radius: 50%; /* Imagem circular */
+  object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.div_pessoas h3 {
+  color: aliceblue;
+  font-size: 16px;
+  margin: 10px 0 8px;
+}
+
+.div_pessoas p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e0e0e0;
+  margin: 8px 0;
 }
