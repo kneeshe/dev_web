@@ -9,10 +9,10 @@
         <title>O Ocultista Cinefilo</title> <!-- o titulo do site -->
     </head>
     <body>
-	<div class="topo_site"><img id="logo_esq" src="../imagens/logo_gato.jpeg" alt="logo do site">
-	<img id="logo_dir" src="../imagens/logo_gato.jpeg" alt="logo do site">		
-        <h1>O Ocultista Cinéfilo</h1> <!-- letreiro no topo do site -->
-        <h1 id="flip">O Ocultista Cinéfilo</h1> </div> <!-- letreiro no topo do site que sera invertido -->
+	<div class="topo_site">
+                <h1>O Ocultista Cinéfilo</h1> <!-- letreiro no topo do site -->
+                <h1 id="flip">O Ocultista Cinéfilo</h1> 
+        </div> <!-- letreiro no topo do site que sera invertido -->
         
         <ul> <!-- cria uma lista não ordenada. nesse caso foi usado para criar o menu do site -->
         <li><a href="index.php" id="inicio" style="background-color: #12151c"> Inicio </a></li> <!-- cada um dos links que levarão para outras paginas do site -->
@@ -39,7 +39,8 @@
         </div>
 
         <!-- link para o gif que aparece na pagina inicial do site -->
-        <iframe id="raposa" src="https://giphy.com/embed/aFEMFqZpDrkRy" width="234" height="380" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
+        <!-- <iframe id="raposa" src="https://giphy.com/embed/aFEMFqZpDrkRy" width="234" height="380" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+        
+        <footer> . </footer>
     </body>
 </html>

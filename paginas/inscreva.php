@@ -55,5 +55,8 @@
 		<div id="insc_botao"><p><input type="submit" value="Enviar" id="submit" name="submit"></p></div><!-- botão que envia os dados do input para a função do js e o script do php -->
 	</form>
 	</div>
+
+    <footer> . </footer>
+
     </body>
 </html>

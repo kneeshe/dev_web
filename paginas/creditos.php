@@ -108,5 +108,8 @@
             <img id="" src="../imagens/vinicius.jpg" alt="Vinicius">
         </div>
     </div>
+
+    <footer> . </footer>
+
 </body>
 </html>

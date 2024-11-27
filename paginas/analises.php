@@ -63,5 +63,8 @@ include '../banco/conexao_banco.php';
         
 
         <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">
+
+        <footer> . </footer>
+
     </body>
 </html>

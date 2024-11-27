@@ -50,5 +50,8 @@
         <p>Se você ainda está com dúvidas sobre o que é esse site, pode ser que o Inferno já tenha te pegado.
         Bem-vindo ao clube. 🐾🔥</p>
     </div>
+
+    <footer> . </footer>
+
 </body>
 </html>
