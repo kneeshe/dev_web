@@ -17,7 +17,6 @@
 	<li><a href="creditos.php" id="creditos">Créditos</a></li> 
 	<li><a href="analises.php" id="analises">Análises</a></li>
         <li><a href="noticias.php" id="noticias">Notícias</a></li>
-        <li><a href="cadastro_filme.php" id="cadastro_filme">ADD Filmes</a></li>
         <li style="float:right"><a href="inscreva.php" id="inscreva">Inscreva-se</a></li>
     </ul>
 

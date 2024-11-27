@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $idade = $_POST['idade'];
     $descricao = $_POST['descricao'];
 
-    $stmt = $conn->prepare("INSERT INTO filme (nome, id_genero, diretor, autores, data_lancamento, id_idade, descricao) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO filme (nome, id_genero_filme, diretor, autores, data_lancamento, id_idade_indicada, descricao) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssss", $nome, $genero, $diretor, $autores, $data, $idade, $descricao);
 
     if ($stmt->execute()) {
