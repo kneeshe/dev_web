@@ -3,6 +3,23 @@ body { /* configurações visuais para todo o corpo do site - isso inclui a font
   background-color: #531516;
 }
 
+.topo_site {
+  margin: 5px; 
+}
+
+#logo_esq {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+
+#logo_dir {
+  width: 150px;
+  height: 150px;
+  float: right;
+}
+
+
 h1 { /* define a cor, peso e tamanho da fonte e alinhamento do titulo do site */
   color: white;
   text-align: center;
@@ -81,15 +98,20 @@ a:hover { /* o efeito hover faz com que os links mudem a cor de fundo quando o m
 
 /* as div's abaixo são apenas edições visuais para manter o texto delas na cor branca */
 .div_noticia {
-    color: white;
+  color: white;
+  margin: 50px;
 }
 
 .div_sobre {
   color: white;
+  margin: 50px;
+  border-right: 50px;
+  padding-right: 50px;
 }
 
 .div_index {
   color: white;
+  margin: 50px;
 }
 
 /* gira  o gif da raposa no eixo horizontal */
@@ -293,4 +315,36 @@ button.btn:hover {
   line-height: 1.5;
   color: #e0e0e0;
   margin: 8px 0;
+}
+
+.inscreva {
+  --background-color: #661b1c;
+  margin: 5em;
+  position: absolute;
+  left: -55px;
+}
+
+#insc_nome {
+  margin: 3px;
+  width: 450px;
+}
+
+#insc_email {
+  margin: 3px;
+  width: 450px;
+}
+
+#insc_genero {
+  margin: 3px;
+  width: 450px;
+}
+
+#insc_text {
+  margin: 3px;
+  width: 450px;
+}
+
+#insc_botao {
+  margin: 3px;
+  width: 600px;
 }
