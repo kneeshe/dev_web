@@ -16,7 +16,7 @@
         <li><a href="index.php" id="inicio"> Inicio </a></li>
         <li><a href="sobre.php" id="sobre"> Sobre </a></li>
 	<li><a href="creditos.php" id="creditos">Créditos</a></li> 
-	<li><a href="tabela_bd.php" id="analises"> Análises </a></li>
+	<li><a href="analises.php" id="analises"> Análises </a></li>
         <li><a href="noticias.php" id="noticias" style="background-color: #12151c"> Notícias </a></li>
         <li style="float:right"><a href="inscreva.php" id="inscreva"> Inscreva-se </a></li>
         </ul>

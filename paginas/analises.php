@@ -1,5 +1,5 @@
 <?php
-include '../banco_dados/conexao.php';
+include '../banco/conexao_banco.php';
 ?>
 
 <!DOCTYPE html>
@@ -62,6 +62,6 @@ include '../banco_dados/conexao.php';
         </div>
         
 
-        <img id="gato" src="../imagens/gato_demon.jpg" alt="gato do demo">
+        <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">
     </body>
 </html>

@@ -24,11 +24,11 @@ $idade = $conn->query("SELECT id, idade FROM idade");
             <li><a href="analises.php" id="analises">Análises</a></li>
             <li><a href="creditos.php" id="creditos">Créditos</a></li>
             <li><a href="noticias.php" id="noticias">Notícias</a></li>
-            <li><a href="cadastro_filme.php" id="cadastro_filme" style="background-color: #12151c">ADD Filmes</a></li>
+            <li><a href="cadastro_filme.php" id="cadastro_filme" style="background-color: #12151c">Adicionar filme</a></li>
             <li style="float:right"><a href="inscreva.php" id="inscreva">Inscreva-se</a></li>
         </ul>
 
-        <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">
+        <img id="gato" src="../imagens/gato_demon.jpg" alt="gato do demo">
 
         <div class="div_formulario">
             <h2 style="color:white">Cadastre um novo filme</h2>

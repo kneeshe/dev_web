@@ -9,20 +9,23 @@
         <title>O Ocultista Cinefilo</title> <!-- o titulo do site -->
     </head>
     <body>
+	<div class="topo_site"><img id="logo_esq" src="../imagens/logo_gato.jpeg" alt="logo do site">
+	<img id="logo_dir" src="../imagens/logo_gato.jpeg" alt="logo do site">		
         <h1>O Ocultista Cinéfilo</h1> <!-- letreiro no topo do site -->
-        <h1 id="flip">O Ocultista Cinéfilo</h1> <!-- letreiro no topo do site que sera invertido -->
+        <h1 id="flip">O Ocultista Cinéfilo</h1> </div> <!-- letreiro no topo do site que sera invertido -->
         
         <ul> <!-- cria uma lista não ordenada. nesse caso foi usado para criar o menu do site -->
         <li><a href="index.php" id="inicio" style="background-color: #12151c"> Inicio </a></li> <!-- cada um dos links que levarão para outras paginas do site -->
         <li><a href="sobre.php"id="sobre"> Sobre </a></li>
 	<li><a href="creditos.php" id="creditos">Créditos</a></li>       
-	<li><a href="tabela_bd.php" id="analises"> Análises </a></li>
+	<li><a href="analises.php" id="analises"> Análises </a></li>
         <li><a href="noticias.php" id="noticias"> Notícias </a></li>
 	<li style="float:right"><a href="inscreva.php" id="inscreva"> Inscreva-se </a></li> <!-- esse link foi estilizado para ficar a direita na pagina do site -->
 	<li><a href="cadastro_filme.php" id="cadastro_filme">Cadastro de filmes</a></li>
         </ul> 
 
-        <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo"> <!-- imagem do gatinho que aparece no site -->
+	<img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo"> <!-- imagem do gatinho que aparece no site -->
+
 
         <div class="div_index"> <!-- div para criar um bloco editavel -->
           <p> <!-- cria um paragrafo --> 
