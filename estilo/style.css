@@ -4,21 +4,10 @@ body { /* configurações visuais para todo o corpo do site - isso inclui a font
 }
 
 .topo_site {
-  margin: 5px; 
+  margin: 5px;
+  border: 2px;
+  border-color: bisque;
 }
-
-#logo_esq {
-  width: 150px;
-  height: 150px;
-  float: left;
-}
-
-#logo_dir {
-  width: 150px;
-  height: 150px;
-  float: right;
-}
-
 
 h1 { /* define a cor, peso e tamanho da fonte e alinhamento do titulo do site */
   color: white;
@@ -69,6 +58,8 @@ a:hover { /* o efeito hover faz com que os links mudem a cor de fundo quando o m
 #gato { /* edição visual da imagem do gato */
   border-radius: 8px;
   float: right;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-bottom: 0px;
   margin-top: 45px;
   display: block;
@@ -78,7 +69,8 @@ a:hover { /* o efeito hover faz com que os links mudem a cor de fundo quando o m
 }
 
 #gato:hover{ /* faz com que o gato gire no eixo x quando o mouse passa por cima */
-  transform: scaleX(-1);
+
+  content: url("../imagens/logo_gato.jpeg");
 }
 
 #dog { /* edição visual da imagem do gato */
@@ -105,6 +97,7 @@ a:hover { /* o efeito hover faz com que os links mudem a cor de fundo quando o m
 .div_sobre {
   color: white;
   margin: 50px;
+  padding-right: 50px;
   border-right: 50px;
   padding-right: 50px;
 }
@@ -347,4 +340,18 @@ button.btn:hover {
 #insc_botao {
   margin: 3px;
   width: 600px;
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  bottom: 5px;
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  font-size: 1px;
+  background: url("../imagens/fogo.gif");
+  background-repeat: repeat-x;
+  display: block;
+  flex: 1;
 }
