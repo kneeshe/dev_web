@@ -1,0 +1,422 @@
+body { /* configurações visuais para todo o corpo do site - isso inclui a fonte e a cor de fundo*/ 
+  font-family: 'Inter';
+  background-color: #531516;
+}
+
+.topo_site {
+  margin: 5px;
+  border: 2px;
+  border-color: bisque;
+}
+
+h1 { /* define a cor, peso e tamanho da fonte e alinhamento do titulo do site */
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+#flip { /* mesmo acima, com a diferença que inverte a fonte no eixo */
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  transform: scaleY(-1);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+ul { /* configuração da lista não ordenada. overflow faz com que ela siga todo o comprimento da tela */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1B222C;
+  border-radius: 8px;
+}
+
+li { /* edição visual dos membros da lista */
+  float: left;
+  display: inline;
+  background-color: #1B222C;
+  border-radius: 8px;
+}
+
+a { /* edição visual de cada elemento da lista, os links. text-decoration none retira a linha abaixo dos links */
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+
+a:hover { /* o efeito hover faz com que os links mudem a cor de fundo quando o mouse passa por cima */
+  background-color: #661b1c;
+}
+
+#gato { /* edição visual da imagem do gato */
+  border-radius: 8px;
+  float: right;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 0px;
+  margin-top: 45px;
+  display: block;
+  object-fit: contain;
+  width: 30%;
+  height: 40%;
+}
+
+#gato:hover{ /* faz com que o gato gire no eixo x quando o mouse passa por cima */
+
+  content: url("../imagens/logo_gato.jpeg");
+}
+
+#dog { /* edição visual da imagem do gato */
+  border-radius: 8px;
+  float: none;
+  margin-bottom: 0px;
+  margin-top: 45px;
+  display: block;
+  object-fit: contain;
+  width: 30%;
+  height: 40%;
+}
+
+#dog:hover{ /* faz com que o gato gire no eixo x quando o mouse passa por cima */
+  transform: scaleX(-1);
+}
+
+/* as div's abaixo são apenas edições visuais para manter o texto delas na cor branca */
+.div_noticia {
+  color: white;
+  margin: 50px;
+}
+
+.div_sobre {
+  color: white;
+  margin: 50px;
+  padding-right: 50px;
+  border-right: 50px;
+  padding-right: 50px;
+}
+
+.div_index {
+  color: white;
+  margin: 50px;
+}
+
+/* gira  o gif da raposa no eixo horizontal */
+#raposa {
+  transform: scaleX(-1);
+}
+
+.form_inscricao { /* muda a cor da fonte dos elementos do formulario */
+  color: white;
+}
+
+#submit { /* edição grafica do botão do formulario. muda a cor dele, tamanho da fonte e deixa o botão com cantos arredondados */
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  border: #1B222C;
+  background-color: #1B222C;
+}
+
+#submit:hover { /* muda a cor de fundo do botão quando o mouse passar por cima */
+  background-color: #12151c;
+}
+
+.mensagem_erro { /* adiciona uma cor vermelha na mensagem de alerta */
+  background-color: #1B222C;
+  color: rgb(199, 24, 24);
+  font-size: large;
+  font-weight: bolder;
+  margin: 3px;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.filme {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin: 10px;
+  background-color: #0f0f0f70;
+  color: aliceblue;
+}
+
+.div_formulario {
+  position: absolute; /* Define a posição absoluta em relação ao contêiner mais próximo com position definido */
+  left: 0;            /* Move para o lado esquerdo */
+  margin: 0; 
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background-color: rgba(56, 52, 52, 0.541); /* Fundo escuro translúcido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.div_formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #661919; /* Destaque no subtítulo */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: calc(100% - 10px);
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #661919;
+  box-shadow: 0 0 5px #661919;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="file"] {
+  padding: 5px;
+  color: #ffffff;
+}
+
+/* Botão de envio */
+button.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #7e0e0e;
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.btn:hover {
+  background-color: #661919;
+}
+
+.creditos-container {
+  width: 80%;
+  height: 350px; /* Altura visível da div */
+  overflow: hidden; /* Limita o conteúdo visível dentro da div */
+  border-radius: 10px;
+  background-color: #0f0f0f70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: aliceblue;
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, 15%); /* Ajusta o centro real */
+}
+
+.div_creditos {
+  position: absolute;
+  animation: rollCredits 25s linear infinite; /* Loop infinito */
+  text-align: center;
+}
+
+.div_creditos h2, .div_creditos h3 {
+  margin: 10px 0;
+}
+
+@keyframes rollCredits {
+  0% {
+      transform: translateY(100%); /* Começa na parte inferior */
+  }
+  100% {
+      transform: translateY(-100%); /* Sai pela parte superior */
+  }
+}
+
+.div_integrantes {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #0f0f0f70;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px; /* Tamanho máximo da seção */
+}
+
+.div_pessoas {
+  margin: 10px;
+  padding: 15px;
+  width: calc(45% - 20px); /* Menor largura para ajustar o layout */
+  background-color: #292929;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.div_pessoas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.div_pessoas img {
+  width: 100px; /* Largura fixa */
+  height: 100px; /* Altura igual à largura */
+  border-radius: 50%; /* Imagem circular */
+  object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.div_pessoas h3 {
+  color: aliceblue;
+  font-size: 16px;
+  margin: 10px 0 8px;
+}
+
+.div_pessoas p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e0e0e0;
+  margin: 8px 0;
+}
+
+.inscreva {
+  --background-color: rgba(56, 52, 52, 0.541);
+  --margin: 5em;
+  --position: absolute;
+  --left: -55px;
+  position: absolute; /* Define a posição absoluta em relação ao contêiner mais próximo com position definido */
+  left: 0;            /* Move para o lado esquerdo */
+  margin: 0; 
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background-color: rgba(56, 52, 52, 0.541); /* Fundo escuro translúcido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+#insc_nome {
+  margin: 3px;
+  width: 450px;
+}
+
+#insc_email {
+  margin: 3px;
+  width: 450px;
+}
+
+#insc_genero {
+  margin: 3px;
+  width: 450px;
+}
+
+#insc_text {
+  margin: 3px;
+  width: 450px;
+}
+
+#insc_botao {
+  margin: 3px;
+  width: 600px;
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  bottom: 5px;
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  font-size: 1px;
+  background: url("../imagens/fogo.gif");
+  background-repeat: repeat-x;
+  display: block;
+  flex: 1;
+  z-index: -5;
+}
+
+.div_fil {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  --background-color: #0f0f0f70;
+  border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px; /* Tamanho máximo da seção */
+}
+
+.filme {
+  margin: 10px;
+  padding: 15px;
+  width: calc(45% - 20px); /* Menor largura para ajustar o layout */
+  --background-color: #292929;
+  background-color: #292929f3;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.filme img {
+  width: 100px; /* Largura fixa */
+  height: 100px; /* Altura igual à largura */
+  object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+  border-radius: 2px;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.filme h2 {
+  color: aliceblue;
+  font-size: 27px;
+  margin: 10px 0 8px;
+}
+
+.filme p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e0e0e0;
+  margin: 8px 0;
+  text-align: left;
+}
