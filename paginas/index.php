@@ -2,6 +2,12 @@
 
 <html> 
     <head>
+
+        <audio controls autoplay>
+                <source src="../audio/pixel.mp3" type="audio/mp3">
+                O navegador não suporta audios.
+        </audio>
+
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'> <!--baixa a fonte "inter" do google para ser usada -->
         <meta charset="utf-8"> <!-- define os caracteres como utf-8, para evitar problemas com sinais latinos -->
         <link rel="stylesheet" type="text/css" href="../estilo/style.css"> <!-- instancia o arquivo css -->

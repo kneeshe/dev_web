@@ -42,7 +42,7 @@ include '../banco/conexao_banco.php';
                         echo "<p>Atores: " . htmlspecialchars($row["autores"]) . "</p>";
                         echo "<p>Data de Lançamento: " . htmlspecialchars(date('d/m/Y', strtotime($row["data_lancamento"]))) . "</p>";
                         echo "<p>Idade Indicada: " . htmlspecialchars($row["idade"]) . "</p>";
-                        echo "<p>Descrição: " . nl2br(htmlspecialchars($row["descricao"])) . "</p>";
+                        echo "<p>Comentário: " . nl2br(htmlspecialchars($row["descricao"])) . "</p>";
 
                         if (!empty($row["imagem"])) {
                             echo "<img src='../uploads/" . htmlspecialchars($row["imagem"]) . "' alt='Imagem do Filme' style='width: 200px; height: auto;'>";
@@ -60,9 +60,6 @@ include '../banco/conexao_banco.php';
             ?>
         </div>
         
-
-        <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">
-
         <footer> . </footer>
 
     </body>
