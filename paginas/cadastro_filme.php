@@ -13,6 +13,7 @@ $idade = $conn->query("SELECT id, idade FROM idade");
         <link rel="stylesheet" type="text/css" href="../estilo/style.css">
         <script type="text/javascript" src="script.js"></script>
         <title>O Ocultista Cinéfilo</title>
+        <link rel="shortcut icon" href="../imagens/cat-icon.png" type="image/x-icon">
     </head>
     <body>
         <h1>O Ocultista Cinéfilo</h1>
@@ -26,6 +27,7 @@ $idade = $conn->query("SELECT id, idade FROM idade");
             <li><a href="noticias.php" id="noticias">Notícias</a></li>
             <li><a href="cadastro_filme.php" id="cadastro_filme" style="background-color: #12151c">Cadastro de filmes</a></li>
             <li style="float:right"><a href="inscreva.php" id="inscreva">Inscreva-se</a></li>
+            <li style="float:right"><a href="login.php" id="login"> Login </a></li>
         </ul>
 
         <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">

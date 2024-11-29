@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../estilo/style.css">
     <script type="text/javascript" src="script.js"></script>
+    <link rel="shortcut icon" href="../imagens/cat-icon.png" type="image/x-icon">
 </head>
 <body>
     <h1>O Ocultista Cinéfilo</h1>
@@ -16,9 +17,10 @@
         <li><a href="index.php" id="inicio">Início</a></li>
         <li><a href="sobre.php" id="sobre">Sobre</a></li>
         <li><a href="creditos.php" id="creditos" style="background-color: #12151c">Créditos</a></li>
-       <li><a href="analises.php" id="analises">Análises</a></li>
+        <li><a href="analises.php" id="analises">Análises</a></li>
         <li><a href="noticias.php" id="noticias">Notícias</a></li>
         <li style="float:right"><a href="inscreva.php" id="inscreva">Inscreva-se</a></li>
+        <li style="float:right"><a href="login.php" id="login"> Login </a></li>
     </ul>
 
     <h1>Créditos Finais</h1>

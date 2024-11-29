@@ -11,6 +11,7 @@ include '../banco/conexao_banco.php';
         <link rel="stylesheet" type="text/css" href="../estilo/style.css">
         <script type="text/javascript" src="script.js"></script>
         <title>O Ocultista Cinéfilo</title>
+        <link rel="shortcut icon" href="../imagens/cat-icon.png" type="image/x-icon">
     </head>
     <body>
         <h1>O Ocultista Cinéfilo</h1>
@@ -20,9 +21,10 @@ include '../banco/conexao_banco.php';
             <li><a href="index.php" id="inicio">Início</a></li>
             <li><a href="sobre.php" id="sobre">Sobre</a></li>
             <li><a href="creditos.php" id="creditos">Créditos</a></li>
-	    <li><a href="analises.php" id="analises" style="background-color: #12151c">Análises</a></li>
+	        <li><a href="analises.php" id="analises" style="background-color: #12151c">Análises</a></li>
             <li><a href="noticias.php" id="noticias">Notícias</a></li>
             <li style="float:right"><a href="inscreva.php" id="inscreva">Inscreva-se</a></li>
+            <li style="float:right"><a href="login.php" id="login"> Login </a></li>
         </ul>
 
         <div class="div_fil">

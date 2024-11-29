@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="../estilo/style.css">
         <script type="text/javascript" src="../javascript/script.js"></script>
         <title>O Ocultista Cinefilo</title>
+        <link rel="shortcut icon" href="../imagens/cat-icon.png" type="image/x-icon">
     </head>
     <body>
         <h1>O Ocultista Cinéfilo</h1>
@@ -18,6 +19,7 @@
         <li><a href="tabela_bd.php" id="analises" style="background-color: #12151c"> Análises </a></li>
         <li><a href="noticias.php" id="noticias"> Notícias </a></li>
         <li style="float:right"><a href="inscreva.php" id="inscreva"> Inscreva-se </a></li>
+        <li style="float:right"><a href="login.php" id="login"> Login </a></li>
 	</ul>
 
         <img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo">

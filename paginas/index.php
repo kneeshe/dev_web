@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="../estilo/style.css"> <!-- instancia o arquivo css -->
         <script type="text/javascript" src="../javascript/script.js"></script> <!-- instancia o arquivo de scripts -->
         <title>O Ocultista Cinefilo</title> <!-- o titulo do site -->
+        <link rel="shortcut icon" href="../imagens/cat-icon.png" type="image/x-icon">
     </head>
     <body>
 	<div class="topo_site">
@@ -27,7 +28,7 @@
 	<li><a href="analises.php" id="analises"> Análises </a></li>
         <li><a href="noticias.php" id="noticias"> Notícias </a></li>
 	<li style="float:right"><a href="inscreva.php" id="inscreva"> Inscreva-se </a></li> <!-- esse link foi estilizado para ficar a direita na pagina do site -->
-	<li><a href="cadastro_filme.php" id="cadastro_filme">Cadastro de filmes</a></li>
+	<li style="float:right"><a href="login.php" id="login"> Login </a></li>
         </ul> 
 
 	<img id="gato" src="../imagens/demo_gato.jpg" alt="gato do demo"> <!-- imagem do gatinho que aparece no site -->

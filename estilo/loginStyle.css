@@ -1,0 +1,104 @@
+* { /*Adicionando fonte Poppins*/
+    font-family: "Poppins", sans-serif; 
+  }
+  body{ /*Desativando rolagem da página*/
+    overflow: hidden;
+  }
+  img { /*Ajustando o Gif do background*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .login-box {  /*Editando estilo da box de login*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(165, 165, 165, 0.15);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.107);
+    box-sizing: border-box;
+    border-radius: 2em;
+  }
+  .login-box h2 { /*Editando estilo da box de login*/
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+  }
+  .login-box .user-box { 
+    position: relative;
+  }
+  .login-box .user-box input {  /*Editando estilo dos inputs*/
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+  }
+  .login-box .user-box label { /*Editando estilo da label*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s ease;
+  }
+  
+  .login-box .user-box input:focus ~ label, /*Editando estilo do input quando o campo é focado e validado*/
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: white;
+    font-size: 12px;
+  }
+  .login-box .botao-entrar { /*Editando estilo do botão entrar*/
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    padding: 10px 120px;
+    color: black;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin-top: 50px;
+    letter-spacing: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  .login-box .botao-entrar:hover { /*Editando estilo do botão entrar(animação de invisibilidade)*/
+    background-color: transparent;
+    color: white;
+  }
+  .titulo h1 {/*Editando estilo do titulo da box de login*/
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+  #flip { /*Editando estilo do texto flipado da box de login*/
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    transform: scaleY(-1);
+    margin-top: 0;
+    margin-bottom: 20px;
+  }

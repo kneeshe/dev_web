@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>Site em construção</title>
+		<link rel="shortcut icon" href="../imagens/cat-icon.png" type="image/x-icon">
 	</head>
 
 	<body>
