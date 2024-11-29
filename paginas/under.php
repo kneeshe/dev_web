@@ -5,8 +5,14 @@
 		<title>Site em construção</title>
 	</head>
 
-	<body style="background-image:url('../imagens/pikachu.gif'); background-repeat:no-repeat; background-position: 50% 50% 50% 50%">
-		<a href="../paginas/index.php">Clique aqui para entrar no inferno</a>
+	<body>
+		<div>
+			<center>
+				<img src="../imagens/pikachu.gif" alt="pikachu">
+				<br>
+				<a href="../paginas/index.php" style="font-family: Comic Sans MS; font-weight: bold; font-size: 50px">Clique aqui para entrar no inferno</a>
+			</center>
+		</div>
 	</body>
 
 </html>
